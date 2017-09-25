@@ -76,6 +76,7 @@ new Shapeshifter('#el', {
 ### Using shadows
 
 > The blur option for shadows is only working on browsers that support CSS filters.
+>
 > http://caniuse.com/#feat=css-filters
 
 ```javascript
@@ -128,6 +129,7 @@ shapeshifter
 Fully supported by Evergreen Browsers (Edge, Opera, Safari, Firefox & Chrome) and IE 10+ browsers.
 
 > The blur option for shadows is only working on browsers that support CSS filters.
+>
 > http://caniuse.com/#feat=css-filters
 
 
