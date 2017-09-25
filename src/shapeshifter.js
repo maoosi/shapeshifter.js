@@ -68,7 +68,7 @@ export default class Shapeshifter {
 
             this.emitter.emit('destroy')
             this.emitter.off('destroy')
-            this.emitter.off('load')
+            this.emitter.off('ready')
             this.emitter.off('wait')
         })
     }
@@ -165,14 +165,14 @@ export default class Shapeshifter {
             this.image.onload = () => {
                 if (!this.loaded) {
                     this.loaded = true
-                    this.emitter.emit('load', this.image)
+                    this.emitter.emit('ready', this.image)
                 }
             }
             this.image.src = this.options.image
         } else {
             if (!this.loaded) {
                 this.loaded = true
-                this.emitter.emit('load', this.image)
+                this.emitter.emit('ready', this.image)
             }
         }
     }

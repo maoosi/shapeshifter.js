@@ -1,7 +1,7 @@
 {
     "name": "shapeshifter.js",
     "version": "1.0.0",
-    "description": "JavaScript library to mask images and create custom shapes.",
+    "description": "JS library to easily shift between different masking shapes.",
     "repository": "maoosi/shapeshifter.js",
     "main": "dist/shapeshifter.js",
     "module": "dist/shapeshifter.mjs",
