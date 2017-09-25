@@ -10,19 +10,13 @@
 ### Using NPM
 
 ```bash
-npm i shapeshifter.js --save
+npm i @maoosi/shapeshifter --save
 ```
 
 ### Using Yarn
 
 ```bash
-yarn add shapeshifter.js
-```
-
-### Unpkg CDN
-
-```html
-<script src="https://unpkg.com/shapeshifter.js@1.0.0/dist/shapeshifter.js"></script>
+yarn add @maoosi/shapeshifter
 ```
 
 ## Basic usage
@@ -32,7 +26,7 @@ yarn add shapeshifter.js
 ```
 
 ```javascript
-import Shapeshifter from 'shapeshifter.js'
+import Shapeshifter from '@maoosi/shapeshifter'
 
 // create new shapeshifter
 const shapeshifter = new Shapeshifter('#el', { /* options */ })
