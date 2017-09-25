@@ -1,0 +1,46 @@
+{
+    "name": "shapeshifter.js",
+    "version": "1.0.0",
+    "description": "JavaScript library to mask images and create custom shapes.",
+    "repository": "maoosi/shapeshifter.js",
+    "main": "dist/shapeshifter.js",
+    "module": "dist/shapeshifter.mjs",
+    "jsnext:main": "dist/shapeshifter.mjs",
+    "scripts": {
+        "prebuild": "eslint src",
+        "build": "rollup -c",
+        "watch": "rollup -c -w"
+    },
+    "homepage": "https://github.com/maoosi/shapeshifter.js#readme",
+    "author": "maoosi <hello@sylvainsimao.fr>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/maoosi/shapeshifter.js/issues"
+    },
+    "keywords": [
+        "es6",
+        "shape",
+        "mask",
+        "images",
+        "javascript"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "babel-core": "^6.24.1",
+        "babel-eslint": "^7.2.1",
+        "babel-plugin-external-helpers": "^6.22.0",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-register": "^6.24.1",
+        "babelrc-rollup": "^3.0.0",
+        "eslint": "^3.19.0",
+        "knot.js": "^1.1.5",
+        "rollup": "^0.41.6",
+        "rollup-plugin-node-resolve": "^3.0.0",
+        "rollup-plugin-babel": "^2.7.1",
+        "rollup-plugin-uglify": "^1.0.1",
+        "rollup-watch": "^3.2.2",
+        "uglify-js-harmony": "^2.7.5",
+        "wait.js": "^3.0.0"
+    }
+}

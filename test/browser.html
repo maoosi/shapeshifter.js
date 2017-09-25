@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+
+    <title>shapeshifter.js</title>
+
+    <style media="screen">
+        body {
+            margin: 0;
+            background: #232222;
+            background: #ccc;
+            overflow: hidden;
+        }
+        #jim {
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="jim"></div>
+
+    <script src="../dist/shapeshifter.js"></script>
+    <script>
+
+        // create a shapeshifter
+        const shapeshifter = new Shapeshifter('#jim', {
+            image: 'image.jpg',
+            color: 'rgba(102, 117, 255, 0.5)',
+            shadow: {
+                color: 'rgba(0, 0, 0, 0.25)',
+                translateX: '10px',
+                translateY: '10px',
+                blur: 8
+            }
+        })
+
+        // on loaded
+        shapeshifter.on('load', () => {
+
+            // shift shape
+            shapeshifter
+                .shift([
+                    [0, 0],
+                    [1, 0.2],
+                    [1, 1],
+                    [0, 0.8]
+                ], 'color')
+                .wait(250)
+                .shift([
+                    [0.5, 0],
+                    [1, 0.5],
+                    [0.5, 1],
+                    [0, 0.5]
+                ], 'auto')
+                .wait(250)
+                .shift([
+                    [0, 0],
+                    [1, 0.2],
+                    [1, 1],
+                    [0, 0.8]
+                ])
+                .wait(250)
+
+        })
+
+        // initiate / load image
+        shapeshifter.init()
+
+    </script>
+
+</body>
+</html>
