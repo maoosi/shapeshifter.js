@@ -75,7 +75,8 @@ new Shapeshifter('#el', {
 
 ### Using shadows
 
-> The blur option for shadows is only working on browsers that support CSS filters. http://caniuse.com/#feat=css-filters
+> The blur option for shadows is only working on browsers that support CSS filters.
+> http://caniuse.com/#feat=css-filters
 
 ```javascript
 new Shapeshifter('#el', {
@@ -88,7 +89,7 @@ new Shapeshifter('#el', {
 })
 ```
 
-### Force shift mode AND/OR shadow
+### Force display mode AND / OR shadow
 
 ```javascript
 let mode = 'auto' // `auto`, `color`, `image`
@@ -126,7 +127,8 @@ shapeshifter
 
 Fully supported by Evergreen Browsers (Edge, Opera, Safari, Firefox & Chrome) and IE 10+ browsers.
 
-> The blur option for shadows is only working on browsers that support CSS filters. http://caniuse.com/#feat=css-filters
+> The blur option for shadows is only working on browsers that support CSS filters.
+> http://caniuse.com/#feat=css-filters
 
 
 ## License
