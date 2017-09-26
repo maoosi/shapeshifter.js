@@ -215,15 +215,15 @@ export default class Shapeshifter {
         this.ctx = this._clipShape(this.canvas, this.ctx, this.shape)
 
         if (this.options.image && this.mode !== 'color') {
-            let posX = (this.canvas.width - this.displayWidth) * -1
-            let posY = (this.canvas.height - this.displayHeight) * -1
+            let posX = ((this.displayWidth - this.canvas.width) / 2) * -1
+            let posY = ((this.displayHeight - this.canvas.height) / 2) * -1
 
             this.ctx.drawImage(
                 this.image,
-                posX, posY,
+                0, 0,
                 this.image.naturalWidth,
                 this.image.naturalHeight,
-                0, 0,
+                posX, posY,
                 this.displayWidth,
                 this.displayHeight
             )
