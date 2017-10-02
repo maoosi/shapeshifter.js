@@ -1,6 +1,6 @@
 {
     "name": "@maoosi/shapeshifter",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "JS library to easily shift between different masking shapes.",
     "repository": {
         "type": "git",

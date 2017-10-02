@@ -65,6 +65,7 @@ export default class Shapeshifter {
             this._unbindEvents()
 
             this.wrapper.parentNode.removeChild(this.wrapper)
+            this.loaded = false
 
             this.emitter.emit('destroy')
             this.emitter.off('destroy')
